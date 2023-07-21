@@ -1,5 +1,9 @@
-- name: import jobs
+- name: single branch pipeline setup
   ansible.biultin.import_task:
-    file: jobs.yml
-  loop:
-    
+    file: sp_jobs.yml
+  loop: "{{sp_jobs}}"
+
+- name: multy branch pipeline setup
+  ansible.biultin.import_task:
+    file: mp_jobs.yml
+  loop: "{{mp_jobs}}"

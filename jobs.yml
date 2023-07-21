@@ -2,12 +2,14 @@
   host: localhost
   connection : local
   vars: 
-    jobs: 
+    sjobs: 
       - roboshop-jenkins
+    mjobs:
       - cart
       - catalogue'
       - user
       - shipping
       - payment
+      - frontend
   roles:
     jenkins-jobs
