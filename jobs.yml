@@ -1,6 +1,13 @@
 - name: jenkins jobs
   host: localhost
   connection : local
-  become: yes
+  vars: 
+    jobs: 
+      - roboshop-jenkins
+      - cart
+      - catalogue'
+      - user
+      - shipping
+      - payment
   roles:
-    - jenkins-jobs
+    jenkins-jobs
