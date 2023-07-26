@@ -3,7 +3,7 @@
   connection : local
   vars: 
     sjobs: 
-      - roboshop-jenkins
+      - roboshop-terraform
     mjobs:
       - cart
       - catalogue'
