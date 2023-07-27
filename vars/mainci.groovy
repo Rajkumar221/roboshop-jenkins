@@ -10,7 +10,7 @@ def call() {
       } else {
         env.gitbrname = "${env.BRANCH_NAME}"
       }
-      checkout scm: [$class: 'GitSCM', userRemoteConfigs: [[url: "https://github.com/raghudevopsb73/${env.component}"]], branches: [[name: gitbrname]]], poll: false
+      checkout scm: [$class: 'GitSCM', userRemoteConfigs: [[url: "https://github.com/Rajkumar221/${env.component}"]], branches: [[name: gitbrname]]], poll: false
 
     }
 
