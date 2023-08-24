@@ -1,10 +1,11 @@
 - name: jenkins jobs
-  host: localhost
-  connection : local
+  # host: localhost
+  # connection : local
+  host: all
   vars: 
-    sjobs: 
+    sp_jobs: 
       - roboshop-terraform
-    mjobs:
+    mp_jobs:
       - cart
       - catalogue'
       - user
