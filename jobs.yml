@@ -13,4 +13,4 @@
       - payment
       - frontend
   roles:
-    jenkins-jobs
+    - jenkins-jobs
