@@ -7,7 +7,7 @@
       - roboshop-terraform
     mp_jobs:
       - cart
-      - catalogue'
+      - catalogue
       - user
       - shipping
       - payment
