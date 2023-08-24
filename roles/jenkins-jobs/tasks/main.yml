@@ -1,9 +1,9 @@
 - name: single branch pipeline setup
-  ansible.builtin.import_task:
+  ansible.builtin.include_task:
     file: sp_jobs.yml
   loop: "{{sp_jobs}}"
 
 - name: multy branch pipeline setup
-  ansible.builtin.import_task:
+  ansible.builtin.include_task:
     file: mp_jobs.yml
   loop: "{{mp_jobs}}"
