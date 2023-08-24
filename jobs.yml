@@ -1,5 +1,5 @@
 - name: jenkins jobs
-  host: localhost
+  hosts: localhost
   connection : local
   # hosts: all
   vars: 
