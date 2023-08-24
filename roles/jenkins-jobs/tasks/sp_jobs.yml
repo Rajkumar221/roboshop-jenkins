@@ -3,11 +3,10 @@
     src: sbranch.xml
     dest: /tmp/sbranch.xml
 
-
 - name: Create a jenkins job using basic authentication
   community.general.jenkins_job:
     config: "{{ lookup('file', '/tmp/sbranch.xml') }}"
-    name: "{{ item }}""
+    name: "{{ item }}"
     password: admin123
     url: http://54.196.163.246:8080
     user: admin
