@@ -1,7 +1,7 @@
 - name: jenkins jobs
   # host: localhost
   # connection : local
-  host: all
+  hosts: all
   vars: 
     sp_jobs: 
       - roboshop-terraform
